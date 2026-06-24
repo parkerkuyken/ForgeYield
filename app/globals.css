@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-zinc-950 text-zinc-200;
+    @apply bg-zinc-950 text-zinc-200 antialiased;
   }
 }
 
@@ -12,4 +12,46 @@
   .finance-card {
     @apply transition-all duration-200 hover:border-zinc-700;
   }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 font-semibold rounded-2xl 
+           transition-all duration-150 active:scale-95 disabled:opacity-40 
+           disabled:cursor-not-allowed disabled:active:scale-100;
+  }
+
+  .input-base {
+    @apply bg-zinc-950 border border-zinc-700 rounded-2xl px-5 py-4 
+           focus:outline-none focus:border-zinc-500 transition-colors duration-150;
+  }
 }
+
+/* Pulse animation for live indicator */
+@keyframes live-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+.live-dot {
+  animation: live-pulse 2s ease-in-out infinite;
+}
+
+/* Subtle count-up shimmer */
+@keyframes shimmer {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+.yield-updating {
+  animation: shimmer 0.6s ease-in-out;
+}
+
+/* Toast slide-in */
+@keyframes toast-in {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
+@keyframes toast-out {
+  from { transform: translateY(0);   opacity: 1; }
+  to   { transform: translateY(100%); opacity: 0; }
+}
+.toast-enter { animation: toast-in  0.3s ease forwards; }
+.toast-exit  { animation: toast-out 0.3s ease forwards; }
