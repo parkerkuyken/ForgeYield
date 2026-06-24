@@ -52,3 +52,4 @@ forgeyield/
 - The demo works without a wallet connected — the "Simulate" button on sweeps and all calculators run in local state.
 - Contract addresses in `wagmi.config.ts` are placeholders. Replace with real Anvil/Ondo addresses before going live.
 - All transactions fall back gracefully to demo mode if they fail (no wallet, wrong network, etc.).
+# ForgeYield
