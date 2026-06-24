@@ -53,3 +53,4 @@ forgeyield/
 - Contract addresses in `wagmi.config.ts` are placeholders. Replace with real Anvil/Ondo addresses before going live.
 - All transactions fall back gracefully to demo mode if they fail (no wallet, wrong network, etc.).
 # ForgeYield
+# ForgeYield
