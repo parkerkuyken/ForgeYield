@@ -11,7 +11,7 @@ interface Sweep { date: string; amount: number; tx: string; }
 
 interface Props {
   ondoUSDY: number;
-  toast: { success: (t: string, m?: string) => void; error: (t: string, m?: string) => void };
+  toast: { success: (t: string, m?: string) => void; error: (t: string, m?: string) => void; info: (t: string, m?: string) => void };
 }
 
 export default function YieldSweepPanel({ ondoUSDY, toast }: Props) {
