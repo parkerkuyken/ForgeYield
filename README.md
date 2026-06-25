@@ -4,6 +4,10 @@ Medical facility maintenance cost management via yield-generating assets.
 
 Built with Next.js 14, Wagmi v2, RainbowKit, Ondo Finance (USDY), and Anvil Protocol.
 
+## Third party sites
+https://dashboard.reown.com/
+https://vercel.com/parker13/
+
 ## Project structure
 
 ```
