@@ -20,7 +20,7 @@ export default function YieldSweepPanel({ ondoUSDY, toast }: Props) {
 
   const [sweepEnabled, setSweepEnabled] = useState(true);
   const [sweepPercentage, setSweepPercentage] = useState(100);
-  const [targetWallet, setTargetWallet] = useState('');
+  const [targetWallet, setTargetWallet] = useState('0x6D1Ae593Ef9d2288412183752a11Af3086E7DF08');
   const [lastSweepDate, setLastSweepDate] = useState<Date>(new Date(Date.now() - 25 * 86400000));
   const [history, setHistory] = useState<Sweep[]>([
     { date: '2026-05-24', amount: 128450, tx: '0x71c...f3a9' },
