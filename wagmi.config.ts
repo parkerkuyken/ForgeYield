@@ -14,7 +14,7 @@ export const USDY_INSTANT_MANAGER   = '0x000000000000000000000000000000000000000
 export const wagmiConfig = createConfig({
   chains: [mainnet],
   connectors: [
-    walletConnect({ projectId: 'YOUR_WALLETCONNECT_PROJECT_ID' }),
+    walletConnect({ projectId: '2892eb59335487ae10ba57856e06b054' }),
     coinbaseWallet({ appName: 'ForgeYield' }),
   ],
   transports: { [mainnet.id]: http() },
